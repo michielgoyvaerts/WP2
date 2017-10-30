@@ -1,0 +1,8 @@
+{
+  "autoload":{
+    "psr-4":{
+      "DAO\\": "WP2/DAO",
+      "Repository\\": "WP2/Repository"
+    }
+  }
+}
