@@ -1,5 +1,5 @@
 {
-"contacts":[
+"contacts":
   {
   "id":1,
   "name": "name1",
@@ -17,5 +17,4 @@
   "name": "name3",
   "email": "name3@email.com"
   }
-]
 }
