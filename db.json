@@ -1,0 +1,23 @@
+{
+"contacts":[
+  {
+  "id":1,
+  "name": "name1",
+  "email": "name1@email.com"
+  }
+,
+"contacts":[
+  {
+  "id":2,
+  "name": "name2",
+  "email": "name2@email.com"
+  }
+,
+"contacts":[
+  {
+  "id":3,
+  "name": "name3",
+  "email": "name3@email.com"
+  }
+]
+}
