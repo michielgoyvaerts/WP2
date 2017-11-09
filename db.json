@@ -6,14 +6,12 @@
   "email": "name1@email.com"
   }
 ,
-"contacts":[
   {
   "id":2,
   "name": "name2",
   "email": "name2@email.com"
   }
 ,
-"contacts":[
   {
   "id":3,
   "name": "name3",
