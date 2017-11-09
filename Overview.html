@@ -9,10 +9,24 @@
 <div id="result">ok</div>
 <script type="text/javascript">
     $(document).ready(function(){
-        $.ajax('http://localhost:63342/TeamTestosteron/WP1/Overview.html?_ijt=nfg0g9r5car2v50gq90632vbsq',{
-            method
-        })
-    })
+        $.ajax('https://my-json-server.typicode.com/michielgoyvaerts/wp2/contacts/',{
+            method: 'Get'
+        }).then (function(data){
+            var tableNode=$("#result");
+            for(var i=0;i<data.length;i++){
+                var trNode=$("<tr>");
+                var thNodeId=$("<th>");
+                thNodeId.text(data[i].id);
+                trNode.append(thNodeId);
+                var thNodeName=$("<th>");
+                thNodeName.text(data[i].name);
+                trNode.append(thNodeName);
+                var thNodeEmail=$("<th>");
+                thNodeEmail.text(data[i].email);
+                trNode.append(thNodeEmail);
+            }
+        });
+    });
 </script>
 </body>
 </html>
