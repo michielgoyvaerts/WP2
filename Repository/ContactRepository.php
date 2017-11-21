@@ -1,4 +1,8 @@
 <?php
+namespace repository;
+
+use dao\ContactDao;
+
 /**
  * Created by PhpStorm.
  * User: michiel.goyvaerts
@@ -14,16 +18,25 @@ class ContactRepository
         $this->contactDao = $contactDao;
     }
 
-    public function getAllContacts(){
-        $contacts = $this->contactDao->getAllContacts();
-        return $contacts;
+    public function getAllContacts()
+    {
+//        $contacts = $this->contactDao->getAllContacts();
+        $this->contactDao->getAllContacts();
+//        print(json_encode($contacts));
     }
 
-    public function createContact($name, $email){
+    public function createContact($name, $email)
+    {
         $this->contactDao->createContact($name, $email);
     }
 
-    public function delteContact($contactId){
+    public function deleteContact($contactId)
+    {
         $this->contactDao->deleteContact($contactId);
+    }
+
+    public function getContact($contactId)
+    {
+        $this->contactDao->getContact($contactId);
     }
 }

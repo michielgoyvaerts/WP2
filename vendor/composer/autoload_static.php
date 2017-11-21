@@ -20,12 +20,16 @@ class ComposerStaticInit1eace5a883c06250ef871ee268d44e6b
     public static $prefixDirsPsr4 = array (
         'Repository\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/WP2/Repository',
+            0 => __DIR__ . '/../..' . '/Repository',
         ),
         'DAO\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/WP2/DAO',
+            0 => __DIR__ . '/../..' . '/DAO',
         ),
+    );
+
+    public static $classMap = array (
+        'AltoRouter' => __DIR__ . '/..' . '/altorouter/altorouter/AltoRouter.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -33,6 +37,7 @@ class ComposerStaticInit1eace5a883c06250ef871ee268d44e6b
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit1eace5a883c06250ef871ee268d44e6b::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit1eace5a883c06250ef871ee268d44e6b::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit1eace5a883c06250ef871ee268d44e6b::$classMap;
 
         }, null, ClassLoader::class);
     }

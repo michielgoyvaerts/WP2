@@ -20,5 +20,3 @@ $repo = new ContactRepository($contactDao);
 
 // query contacts
 $result = $repo->getAllContacts();
-
-?>

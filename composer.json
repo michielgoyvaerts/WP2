@@ -1,8 +1,11 @@
 {
   "autoload":{
     "psr-4":{
-      "DAO\\": "WP2/DAO",
-      "Repository\\": "WP2/Repository"
+      "DAO\\": "DAO/",
+      "Repository\\": "Repository/"
     }
+  },
+  "require": {
+    "altorouter/altorouter": "1.1.0"
   }
 }
