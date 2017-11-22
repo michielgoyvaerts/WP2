@@ -1,12 +1,13 @@
 <?php
-require "vendor/autoload.php";
-use dao\ContactDao;
-use repository\ContactRepository;
+
+require_once 'vendor/autoload.php';
+use DAO\ContactDao;
+use Repository\ContactRepository;
 
 function generateContactRepository()
 {
-    $contactDao = new DAO\ContactDao();
-    $contactRepository = new Repository\ContactRepository($contactDao);
+    $contactDao = new ContactDao();
+    $contactRepository = new ContactRepository($contactDao);
     return $contactRepository;
 }
 
