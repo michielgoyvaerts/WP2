@@ -57,7 +57,7 @@ class ContactDao
                 $statement->bindParam(':name', $name, PDO::PARAM_STR);
                 $statement->bindParam(':email', $email, PDO::PARAM_STR);
                 $statement->execute();
-                $this->getContact($pdo->lastInsertId());
+                return $this->getContact($pdo->lastInsertId());
             }
         } catch (PDOException $e) {
             print 'Exception!: ' . $e->getMessage();

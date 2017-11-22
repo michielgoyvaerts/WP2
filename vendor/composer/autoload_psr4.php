@@ -12,4 +12,5 @@ return array(
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
     'DAO\\' => array($baseDir . '/src/DAO'),
+    'Model\\' => array($baseDir . 'src/Model/')
 );

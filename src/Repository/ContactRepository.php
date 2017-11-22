@@ -28,12 +28,14 @@ class ContactRepository
 
     public function createContact($name, $email)
     {
-        $this->contactDao->createContact($name, $email);
+        $result = $this->contactDao->createContact($name, $email);
+        return $result;
     }
 
     public function deleteContact($contactId)
     {
-        $this->contactDao->deleteContact($contactId);
+        $result = $this->contactDao->deleteContact($contactId);
+        return $result;
     }
 
     public function getContact($contactId)
